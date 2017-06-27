@@ -13,6 +13,23 @@
           <ul class="nav navbar-nav">
               <li routerLinkActive="active blue"><a routerLink="/personnel">Perssonel</a></li>
               <li routerLinkActive="active blue"><a routerLink="/projects">Projects</a></li>
+              <li routerLinkActive="active blue"><a routerLink="/friends">Friends</a></li>
+              <li class="dropdown"
+                  [ngClass]="{'open': dropdownIsOpen }" (click)="toggleDropdown($event)" >
+                <a class="dropdown-toggle">Quản lý bưu gửi<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a>Thông tin bưu gửi</a></li>
+                  <li><a>Trạng thái bưu gửi</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"
+                  [ngClass]="{'open': dropdownIsOpen }" (click)="toggleDropdown($event)" >
+                <a class="dropdown-toggle">Quản lý khách hàng<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a>Danh mục khách hàng</a></li>
+                  <li><a>Doanh thu</a></li>
+                </ul>
+              </li>              
               <li class="dropdown"
                   [ngClass]="{'open': dropdownIsOpen }" (click)="toggleDropdown($event)" >
                 <a class="dropdown-toggle">Dropdown <span class="caret"></span></a>
@@ -21,7 +38,7 @@
                   <li><a>Another action</a></li>
                 </ul>
               </li>
-          </ul>
+          </ul>          
           <div class="navbar-right">
               <p class="navbar-text"><a href="#" class="navbar-link">Tom Rundle</a></p>
           </div>

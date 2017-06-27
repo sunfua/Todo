@@ -1,3 +1,4 @@
+import { FriendModule } from './friend/friend.module';
 import { AppRoutingModule } from './app-routing.module';
 import { PersonnelManagerModule } from './personnel-manager/personnel-manager.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,7 @@ import { ProjectCenterModule } from './project-center/project-center.module';
 import { NotFoundComponent } from './navbar/not-found.component';
 import { ProjectCenterComponent } from './project-center/project-center.component';
 import { PersonnelManagerComponent } from './personnel-manager/personnel-manager.component';
+import { FriendComponent } from './friend/friend.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { PersonnelManagerComponent } from './personnel-manager/personnel-manager
     NavbarModule,
     ProjectCenterModule,
     PersonnelManagerModule,
+    FriendModule,
     AppRoutingModule
   ],
   providers: [],

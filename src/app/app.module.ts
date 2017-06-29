@@ -1,3 +1,4 @@
+import { ItemsModule } from './items/items.module';
 import { FriendModule } from './friend/friend.module';
 import { AppRoutingModule } from './app-routing.module';
 import { PersonnelManagerModule } from './personnel-manager/personnel-manager.module';
@@ -10,10 +11,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { ProjectCenterModule } from './project-center/project-center.module';
-import { NotFoundComponent } from './navbar/not-found.component';
-import { ProjectCenterComponent } from './project-center/project-center.component';
-import { PersonnelManagerComponent } from './personnel-manager/personnel-manager.component';
-import { FriendComponent } from './friend/friend.component';
+// import { NotFoundComponent } from './navbar/not-found.component';
+// import { ProjectCenterComponent } from './project-center/project-center.component';
+// import { PersonnelManagerComponent } from './personnel-manager/personnel-manager.component';
+// import { FriendComponent } from './friend/friend.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FriendComponent } from './friend/friend.component';
     ProjectCenterModule,
     PersonnelManagerModule,
     FriendModule,
+    ItemsModule,
     AppRoutingModule
   ],
   providers: [],

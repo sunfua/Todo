@@ -1,3 +1,4 @@
+import { ItemsService } from './../items.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemsManagerComponent implements OnInit {
   componentName: string = 'Items Manager';
-  constructor() { }
+  itemcode: string ='el650088559vn';
+  item: any;
+  constructor(private itemService: ItemsService) { }
 
   ngOnInit() {
+    this.itemService.getItem(this.itemcode).subscribe(data => this.item = data);
     console.log('init');
   }
 

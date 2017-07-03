@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="page-header">
+    <h1>{{componentName}}</h1>    
+    <input #box placeholder="Item Code" maxlength=13 (input)="box.value=$event.target.value.toUpperCase()"
+      (keyup.enter)="trace(box.value)"
+      (blur)="trace(box.value)">
+    <button (click)="trace(box.value)">Trace</button>
+  </div>
+
+  <div *ngIf="items" class="table-responsive">
+      <table class="table">
+          <caption *ngIf="caption">{{ caption }}</caption>
+          <thead>
+              <tr>
+                  <th>ItemCode </th>
+                  <th>PosCode </th>
+                  <th>Status </th>
+                  <th>TraceDate </th>
+                  <th>StatusDesc </th>
+                  <th>Note </th>
+                  <th>TransferMachine </th>
+                  <th>TransferUser </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let i of items; let i = index">
+                  <td><a href="{{i.itemCode}}">{{i.itemCode}}</a></td>
+                  <td>{{i.poscode}}</td>
+                  <td>{{i.status}}</td>
+                  <td>{{i.traceDate|date:'yyyy-MM-dd HH:mm:ss'}}</td>  
+                  <td>{{i.statusDesc}}</td>
+                  <td>{{i.note}}</td>
+                  <td>{{i.transferMachine}}</td>
+                  <td>{{i.transferUser}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

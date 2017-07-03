@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { ProjectCenterModule } from './project-center/project-center.module';
+import { ItemsTraceComponent } from './items/items-trace/items-trace.component';
 // import { NotFoundComponent } from './navbar/not-found.component';
 // import { ProjectCenterComponent } from './project-center/project-center.component';
 // import { PersonnelManagerComponent } from './personnel-manager/personnel-manager.component';
@@ -18,7 +19,8 @@ import { ProjectCenterModule } from './project-center/project-center.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemsTraceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { ItemsTraceComponent } from './../items/items-trace/items-trace.component';
 import { ItemsManagerComponent } from './items-manager/items-manager.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -5,7 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 const itemsRoutes: Routes = [
     {
         path: 'items',
-        component: ItemsManagerComponent
+        component: ItemsTraceComponent//ItemsManagerComponent
     },
     // {
     //      path: '',

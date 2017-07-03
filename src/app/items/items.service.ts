@@ -6,6 +6,7 @@ import { Observable } from "rxjs/Observable";
 @Injectable()
 export class ItemsService {
   apiUrl: string ='http://todoapi.local/api/traceitem/'; 
+  //apiUrl: string ='http://localhost:5000/api/traceitem/'; 
   //apiUrl: string ='https://api.github.com/users/hadley/orgs';
   private headers: Headers = new Headers();
   constructor(private _http: Http) {     

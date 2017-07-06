@@ -1,3 +1,4 @@
+import { SpinnerComponent } from './../spinner/spinner.component';
 import { ItemsRoutingModule } from './items-routing.module';
 import { ItemsService } from './items.service';
 import { NgModule } from '@angular/core';
@@ -7,10 +8,10 @@ import { ItemsManagerComponent } from './items-manager/items-manager.component';
 @NgModule({
   imports: [
     CommonModule,
-    ItemsRoutingModule
+    ItemsRoutingModule,    
   ],
-  declarations: [ItemsManagerComponent],
+  declarations: [ItemsManagerComponent,SpinnerComponent],
   providers: [ItemsService],
-  exports: [ItemsManagerComponent]
+  exports: [ItemsManagerComponent,SpinnerComponent]
 })
 export class ItemsModule { }

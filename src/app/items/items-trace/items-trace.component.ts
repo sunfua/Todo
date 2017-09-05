@@ -23,13 +23,18 @@ export class ItemsTraceComponent implements OnInit {
       this.itemService.getItem(this.itemcode)
         .subscribe(data => this.items = data,
                   ()=>this.stopRefreshing(),
-                  ()=>this.stopRefreshing());      
+                  ()=>this.stopRefreshing());    
+      console.log('IF: '+this.isRequesting);  
     }
     console.log(this.isRequesting);
   }
 
   private stopRefreshing() {
       this.isRequesting = false;
+  }
+
+  traceStatus(itemcode:string){
+    // dang fix login
   }
 
   ngOnInit() {

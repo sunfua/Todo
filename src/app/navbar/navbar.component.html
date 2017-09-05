@@ -24,15 +24,15 @@
                 </ul>
               </li>
               <li class="dropdown"
-                  [ngClass]="{'open': dropdownIsOpen }" (click)="toggleDropdown($event)" >
+                  [ngClass]="{'open': dropdownIsOpen2 }" (click)="toggleDropdown2($event)" >
                 <a class="dropdown-toggle">Quản lý khách hàng<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a>Danh mục khách hàng</a></li>
+                  <li routerLinkActive="active blue"><a routerLink="/customers">Danh mục khách hàng</a></li>                  
                   <li><a>Doanh thu</a></li>
                 </ul>
               </li>              
               <li class="dropdown"
-                  [ngClass]="{'open': dropdownIsOpen }" (click)="toggleDropdown($event)" >
+                  [ngClass]="{'open': dropdownIsOpen3 }" (click)="toggleDropdown3($event)" >
                 <a class="dropdown-toggle">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a>Action</a></li>
